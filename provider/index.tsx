@@ -5,13 +5,13 @@ import React, { Children, ReactNode } from 'react'
 const Layout = ({children}: {children: ReactNode}) => {
   return (
     <>
-    <QueryProvider>
-        <Header/>
-        {children}
-        <Footer/>   
-    </QueryProvider>
+      <QueryProvider>
+        <Header />
+        <main className="site-main">{children}</main>
+        <Footer />
+      </QueryProvider>
     </>
-  )
+  );
 }
 
 export default Layout
