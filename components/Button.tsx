@@ -1,12 +1,12 @@
-import React, {FC} from 'react'
-import {ButtonType} from "@/@types/ButtonType"
+import { ButtonType } from '@/@types/ButtonType'
+import React, { FC } from 'react'
 
-const Button:FC<ButtonType> = ({icon, iconPosition, title, type, extraClass, variant}) => {
+const Button:FC<ButtonType> = ({icon, iconPostion, title, type, extraClass, variant}) => {
   return (
-    <button className={`cursor-pointer py-[15px] px-[20px] bg-[#A259FF] border-[2px] ${variant == "outlined" ? "border-[#A259FF]" : "border-transparent"} text-white rounded-[20px] font-semibold text-[16px] flex items-center gap-3 ${extraClass}`}>
-        {iconPosition == "left" && icon}
+    <button type={type} className={`py-[18px] px-[30px] cursor-pointer ${variant == "outlined" ? "border-[#A259FF] border-[2px]" : "bg-[#A259FF]"} text-white rounded-[20px] font-semibold text-[16px] flex items-center gap-3 ${extraClass}`}>
+        {iconPostion == "left" && icon}
         {title}
-        {iconPosition == "right" && icon}
+        {iconPostion == "right" && icon}
     </button>
   )
 }

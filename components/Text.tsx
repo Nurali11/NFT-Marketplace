@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react'
 
-const Text = ({children, classList}: {children: ReactNode, classList?:string}) => {
+const Text = ({children, classList}:{children:ReactNode, classList?:string}) => {
   return (
-    <p className={`text-[#cccc] text-[16px] font-normal ${classList}`}>{children}</p>
+   <p  className={`text-[#CCCCCC] text-[16px] font-normal ${classList}`}>{children}</p>
   )
 }
 
