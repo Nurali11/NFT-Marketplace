@@ -13,5 +13,22 @@
         "totalSale":"Total Sale",
         "auctions":"Auctions",
         "artists":"Artists"
+    },
+    "Footer": {
+        "desc": "NFT marketplace UI created with Anima for Figma.",
+        "commutity": "Join our community",
+        "explore":  "Explore",
+        "join": "Join our weekly digest",
+        "joinDesc": "Get exclusive promotions & updates straight to your inbox."
+    },
+    "Collection": {
+        "title": "Trending Collection",
+        "desc": "Checkout our weekly updated trending collection."
+    },
+    "Creators":{
+        "title":"Top Creators",
+        "desc":"Checkout Top Rated Creators on the NFT Marketplace.",
+        "button": "View Rankings",
+        "totalSales":"Total Sales"
     }
 }

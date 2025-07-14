@@ -12,5 +12,22 @@
     "totalSale": "Umumiy savdo",
     "auctions": "Auktsionlar",
     "artists": "Rassomlar"
-  }
+  },
+    "Footer": {
+        "desc": "Figma uchun Anima bilan yaratilgan NFT bozor interfeysi.",
+        "commutity": "Bizning hamjamiyatimizga qo'shiling",
+        "explore":  "Tadqiqot qiling",
+        "join": "Haftalik dayjestimizga qo'shiling",
+        "joinDesc": "Eksklyuziv aktsiyalar va yangilanishlarni to'g'ridan-to'g'ri pochta qutingizga oling."
+    },
+    "Collection": {
+        "title": "Trenddagi to'plamlar",
+        "desc": "Haftalik yangilanadigan trend to'plamimizni tekshiring."
+    },
+    "Creators":{
+        "title":"Eng yaxshi rassomlar",
+        "desc":"NFT bozoridagi eng yuqori baholangan ijodkorlarni tekshiring.",
+        "button": "Reytinglarni ko'rish",
+        "totalSales": "Umumiy savdo"
+    }
 }
