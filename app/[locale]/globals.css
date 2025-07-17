@@ -29,3 +29,10 @@ body {
   padding: 8px;
 }
 
+.font-monoSpace {
+  font-family: var(--font-space-mono);
+}
+
+.font-Spans {
+  font-family: var(--font-work-sans);
+}

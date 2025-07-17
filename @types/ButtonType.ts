@@ -6,5 +6,6 @@ export interface ButtonType {
     title:string,
     type:"submit" | "button",
     extraClass?:string,
-    variant:"filled" | "outlined"
+    variant: "filled" | "outlined",
+    onClick?: () => void
 }

@@ -29,5 +29,47 @@
         "desc":"NFT bozoridagi eng yuqori baholangan ijodkorlarni tekshiring.",
         "button": "Reytinglarni ko'rish",
         "totalSales": "Umumiy savdo"
+    },
+    "Category":{
+        "title": "Kategoriyalar",
+        "Virtual Worlds": "Virtual dunyolar",
+        "Sport": "Sport",
+        "Utility": "Foyda",
+        "Art": "San'at",
+        "Music": "Musiqa",
+        "Photography": "Fotosurat",
+        "Collectibles": "Kolleksiyalar",
+        "Video": "Videolar"
+    },
+    "MoreNFT": {
+        "title": "Ko'proq NFTlarni kashf eting",
+        "desc": "Yangi trendli NFTlarni o'rganing",
+        "price": "Narxi",
+        "highestBid": "Eng yuqori taklif",
+        "button": "Hammasini koʻrish"
+    },
+    "Mashroom": {
+        "title": "Sehrli qo'ziqorinlar",
+        "button": "NFTni korish",
+        "auction": "Auktsion tugaydi:",
+        "hours": "Soat",
+        "minutes": "Minut",
+        "seconds": "Sekund"
+    },
+    "Works": {
+        "title": "U qanday ishlaydi",
+        "desc": "Qanday boshlashni bilib oling",
+        "item1": "Hamyoningizni ornating",
+        "item1desc": "Siz tanlagan hamyonni sozlang. Yuqori o'ng burchakdagi hamyon belgisini bosish orqali uni Animarketga ulang.",
+        "item2": "To'plam yaratish",
+        "item2desc": "Ishingizni yuklang va kollektsiyangizni sozlang. Tavsif, ijtimoiy havolalar va pastki narxni qo'shing.",
+        "item3": "Daromad olishni boshlang",
+        "item3desc": "Auktsionlar va qat'iy narxlar ro'yxatidan tanlang. NFTlarni sotish yoki boshqalarni sotish orqali daromad olishni boshlang."
+    },
+    "Join": {
+        "title": "Bizning hamjamiyatimizga qo'shiling",
+        "desc": "Eksklyuziv aktsiyalar va yangilanishlarni to'g'ridan-to'g'ri pochta qutingizga oling.",
+        "button": "Obuna",
+        "placeholder": "Elektron pochtangizni kiriting"
     }
 }

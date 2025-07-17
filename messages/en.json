@@ -30,5 +30,47 @@
         "desc":"Checkout Top Rated Creators on the NFT Marketplace.",
         "button": "View Rankings",
         "totalSales":"Total Sales"
+    },
+    "Category":{
+        "title": "Browse Categories",
+        "Virtual Worlds": "Virtual Worlds",
+        "Sport": "Sport",
+        "Utility": "Utility",
+        "Art": "Art",
+        "Music": "Music",
+        "Photography": "Photography",
+        "Collectibles": "Collectibles",
+        "Video": "Video"
+    },
+    "MoreNFT": {
+        "title": "Discover More NFTs",
+        "desc": "Explore new trending NFTs",
+        "price": "Price",
+        "highestBid": "Highest Bid",
+        "button": "See All"
+    },
+    "Mashroom": {
+        "title": "Magic Mashrooms",
+        "button": "See NFT",
+        "auction": "Auction ends in:",
+        "hours": "Hours",
+        "minutes": "Minutes",
+        "seconds": "Seconds"
+    },
+    "Works": {
+        "title": "How It Works",
+        "desc": "Find out how to get started",
+        "item1": "Setup Your wallet",
+        "item1desc": "Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.",
+        "item2": "Create Collection",
+        "item2desc": "Upload your work and setup your collection. Add a description, social links and floor price.",
+        "item3": "Start Earning",
+        "item3desc": "Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others."
+    },
+    "Join": {
+        "title": "Join our weekly digest",
+        "desc": "Get exclusive promotions & updates straight to your inbox.",
+        "placeholder": "Enter your email here",
+        "button": "Subscribe"
     }
 }

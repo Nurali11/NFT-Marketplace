@@ -1,13 +1,15 @@
 import { Discord, Instagram, Twitter, YouTube } from "@/assets/icons"
-import Heading from "@/components/Heading"
-import Text from "@/components/Text"
-import { Link } from "@/i18n/navigation"
+import Button from "@/components/Button";
+import Heading from "@/components/Heading";
+import Text from "@/components/Text";
+import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 const Footer = () => {
   const t = useTranslations("Footer");
   const h = useTranslations("HeadersContent");
+  const b = useTranslations("Join");
   return (
     <footer className="bg-[#3B3B3B] py-10">
       <div className="containers">
@@ -53,6 +55,19 @@ const Footer = () => {
               {t("join")}
             </Heading>
             <Text classList="!mb-[20px]">{t("joinDesc")}</Text>
+            <div className="flex items-center relative ">
+              <input
+                className="bg-white py-[15px] w-[420px] h-[60px] outline-none px-[20px] rounded-[20px] text-black"
+                type="email"
+                placeholder={b("placeholder")}
+              />
+              <Button
+                extraClass="absolute left-65 !py-[18px]"
+                title={b("button")}
+                type="button"
+                variant="filled"
+              />
+            </div>
           </div>
         </div>
       </div>

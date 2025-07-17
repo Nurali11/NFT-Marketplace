@@ -4,6 +4,7 @@ import Image from 'next/image'
 import React, { FC } from 'react'
 import Heading from './Heading'
 import Text from './Text'
+import Link from "next/link";
 
 const ArtistsCard: FC<{ item: ArtistType; index: number; t: any }> = ({
   item,
@@ -11,7 +12,10 @@ const ArtistsCard: FC<{ item: ArtistType; index: number; t: any }> = ({
   t,
 }) => {
   return (
-    <div className="w-[270px] relative flex flex-col items-center p-5 h-[250px] rounded-[20px] bg-[#3B3B3B]">
+    <Link
+      href={`/creator/${item.id}`}
+      className="w-[270px] relative flex flex-col !cursor-pointer hover:scale-[1.02] duration-300 items-center p-5 h-[250px] rounded-[20px] bg-[#3B3B3B]"
+    >
       <Image
         className="w-[120px] rounded-full h-[120px] mb-[20px]"
         src={`${API}/file/${item.image}`}
@@ -30,7 +34,7 @@ const ArtistsCard: FC<{ item: ArtistType; index: number; t: any }> = ({
       <button className="w-[30px] h-[30px] flex items-center justify-center bg-[#2B2B2B] text-[16px] text-[#858584] absolute top-[18px] left-[20px] rounded-full">
         {index + 1}
       </button>
-    </div>
+    </Link>
   );
 };
 

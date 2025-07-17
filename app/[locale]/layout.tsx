@@ -1,15 +1,22 @@
 import type { Metadata } from "next";
-import { Work_Sans } from "next/font/google";
+import { Space_Mono, Work_Sans } from "next/font/google";
 import "./globals.css";
 import Layout from "@/provider";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import { GlobalContext } from "@/context/Context";
 
 const workSans = Work_Sans({
   variable: "--font-work-sans",
   subsets: ["latin"],
   weight: ["400", "600", "700"],
+});
+
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
+  subsets: ["latin"],
+  weight: ["700"],
 });
 
 export const metadata: Metadata = {
@@ -30,9 +37,13 @@ export default async function LocaleLayout({
   }
   return (
     <html lang={locale}>
-      <body className={`${workSans.variable} antialiased`}>
+      <body
+        className={`${workSans.variable} ${spaceMono.variable} antialiased`}
+      >
         <NextIntlClientProvider>
-          <Layout>{children}</Layout>
+          <GlobalContext>
+            <Layout>{children}</Layout>
+          </GlobalContext>
         </NextIntlClientProvider>
       </body>
     </html>

@@ -22,31 +22,33 @@ const Header = () => {
         </Link>
         <nav className="hidden lg:flex items-center gap-2.5">
           <Link
-            className="text-[14px] font-semibold text-[#FFFFFF] inline-block py-3 px-5"
+            className="text-[16px] font-semibold text-[#FFFFFF] inline-block py-3 px-5"
             href={"/marketplace"}
           >
             {t("navItem1")}
           </Link>
           <Link
-            className="text-[14px] font-semibold text-[#FFFFFF] inline-block py-3 px-5"
+            className="text-[16px] font-semibold text-[#FFFFFF] inline-block py-3 px-5"
             href={"/rankings"}
           >
             {t("navItem2")}
           </Link>
           <Link
-            className="text-[14px] font-semibold text-[#FFFFFF] inline-block py-3 px-5"
+            className="text-[16px] font-semibold text-[#FFFFFF] inline-block py-3 px-5"
             href={"/connect-wallet"}
           >
             {t("navItem3")}
           </Link>
           <LangConfig />
-          <Button
-            title={t("button")}
-            icon={<UserIcon />}
-            iconPostion="left"
-            type="button"
-            variant="filled"
-          />
+          <Link href={"/auth"}>
+            <Button
+              title={t("button")}
+              icon={<UserIcon />}
+              iconPostion="left"
+              type="button"
+              variant="filled"
+            />
+          </Link>
         </nav>
         <button className="lg:hidden">
           {" "}
