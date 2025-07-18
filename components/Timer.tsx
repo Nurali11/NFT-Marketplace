@@ -4,19 +4,14 @@ import { FormatTime } from "./Format";
 import Button from "./Button";
 
 const Timer = ({ endTime, button }: { endTime: string, button?: boolean }) => {
-  const [isClient, setIsClient] = useState(false);
   const [timeLeft, setTimeLeft] = useState({ hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    setIsClient(true);
-
     const calculateTimeLeft = () => {
       const now = new Date();
       const end = new Date(endTime);
       const diffMs = end.getTime() - now.getTime();
-
       if (diffMs <= 0) return { hours: 0, minutes: 0, seconds: 0 };
-
       const totalSeconds = Math.floor(diffMs / 1000);
       const hours = Math.floor(totalSeconds / 3600);
       const minutes = Math.floor((totalSeconds % 3600) / 60);
@@ -33,8 +28,6 @@ const Timer = ({ endTime, button }: { endTime: string, button?: boolean }) => {
 
     return () => clearInterval(timer);
   }, [endTime]);
-
-  if (!isClient) return null;
 
   return (
     <div className={`${button ? "bg-[#3B3B3B]" : "bg-black/20"}  w-[300px] backdrop-blur-lg rounded-2xl p-6 border border-white/20`}>

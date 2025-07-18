@@ -31,7 +31,7 @@ const SingleAuctionContent = ({auctionData, artistData, moreAuctions}: {auctionD
               </div>
             </div>
             <div className='space-y-[10px]'> 
-              <Text classList='font-monoSpace  !text-[#858584] !text-[22px]'>Description</Text>
+              <Text classList='font-monoSpace !text-[#858584] !text-[22px]'>Description</Text>
               <Text classList='!text-white !text-[22px]'>{auctionData.description}</Text>
             </div>
             <div className='space-y-[10px]'> 
@@ -64,7 +64,9 @@ const SingleAuctionContent = ({auctionData, artistData, moreAuctions}: {auctionD
           </div>
           <div className='flex flex-wrap gap-[30px] mt-[60px]'>
             {moreAuctions.map((item: AuctionsType2) => (
-              <NftCard key={item.id} item={item.nft} imgURL={item.nft.creator.image} />
+              <Link key={item.id} href={`/auctions/${item.id}`}>
+                <NftCard key={item.id} item={item.nft} imgURL={item.nft.creator.image} />
+              </Link>
             ))}
           </div>
         </div>
