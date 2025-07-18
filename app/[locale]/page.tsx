@@ -3,13 +3,10 @@ import Collections from "@/modules/Collections";
 import Creators from "@/modules/Creators";
 import Hero from "@/modules/Hero";
 import Join from "@/modules/Join";
-import MagicMushrooms from "@/modules/MagicMushrooms";
+import MagicMushrooms from "@/modules/Mashroom";
 import NFTMore from "@/modules/NFT_More";
 import Works from "@/modules/Works";
 import { getRequest } from "@/service/getRequest";
-import { get } from "http";
-import Image from "next/image";
-import React from "react";
 
 export default async function Home() {
   const auctions = await getRequest("/auctions");
